@@ -8,6 +8,6 @@ function errorHandler(err, req, res, next){
             const statusCode = is404 ? 404 : 400;
             return res.status(statusCode).json({ message: err });
         default:
-            return res.status(500).json({ message: err.messgae });
+            return res.status(500).json({ message: err.message });
     }
 }
